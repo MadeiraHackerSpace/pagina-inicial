@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeira Hacker Club - Ola Mundoo</title>
+    <style>
+        body {
+            background: #000;
+            color: #00ff99;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 10px;
+        }
+
+        .logo {
+            max-width: 240px;
+            filter: drop-shadow(0 0 6px #00ff99);
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-top: 20px;
+            text-shadow: 0 0 8px #00ff99;
+        }
+
+        .terminal-box, .info-box {
+            background: #111;
+            border: 2px solid #00ff99;
+            width: 80%;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 25px;
+            text-align: left;
+            box-shadow: 0 0 15px #00ff99;
+        }
+
+        .btns {
+            margin-top: 20px;
+        }
+
+        .btns a {
+            text-decoration: none;
+            color: #000;
+            background: #00ff99;
+            padding: 12px 22px;
+            margin: 6px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.2s;
+        }
+
+        .btns a:hover {
+            box-shadow: 0 0 12px #00ff99;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background: #00ff99;
+            animation: blink 0.9s infinite;
+        }
+
+        @keyframes blink {
+            0% {opacity: 1;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/mhc_fundo_branco.png" class="logo" alt="Madeira Hacker Club">
+        <h1>Madeira Hacker Club</h1>
+        <p>Ola Mundoo // Bem-vindo ao nosso laboratório de bits, bytes, café e gambiarra criativa!</p>
+    </header>
+    <div class="info-box">
+        <h2>O que é o Madeira Hacker Club?</h2>
+        <p>
+            O Madeira Hacker Club é um hackerspace em Porto Velho/RO onde a galera se junta para
+            colocar ideias em prática. É um espaço aberto e comunitário para desenvolver
+            projetos, aprender coisas novas.
+        </p>
+    </div>
+    <div class="terminal-box">
+        <p>$ whoami</p>
+        <p>> Madeira Hacker Club.</p>
+        <br>
+        <p>$ objetivo</p>
+        <p>> criar, aprender, compartilhar conhecimento e experiencias.</p>
+        <br>
+        <p>$ próximo_encontro</p>
+        <p>> Toda semana, no espaço físico ou online. Cola com a gente!</p>
+        <span class="cursor"></span>
+    </div>
+
+    
+
+    <div class="btns">
+        <a href="https://github.com/MadeiraHackerSpace" target="_blank">GitHub</a>
+        <a href="https://chat.whatsapp.com/4y7xoORc5NWHxGc3082SBB" target="_blank">WhatsApp</a>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://github.com/MadeiraHackerSpace/pagina-inicial" target="_blank" style="color:#00ff99;">
+                Código-fonte
+            </a>
+        </p>
+        <p>&copy; Madeira Hacker Club — Hack the Planet, baby.</p>
+    </footer>
+    
+
+</body>
+</html>
