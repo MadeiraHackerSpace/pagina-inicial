@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoio - Madeira Hacker Club</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">Sobre</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="donation.html">Apoio</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/MadeiraHackerSpace" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://chat.whatsapp.com/4y7xoORc5NWHxGc3082SBB" target="_blank" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </nav>
+        <h1>Apoie o Espaço</h1>
+    </header>
+
+    <div class="support-box">
+        <h2>Sua contribuição importa</h2>
+        <p>O MHC é mantido por sua comunidade. Escolha como ajudar:</p>
+
+        <div class="btns">
+            <a href="https://buy.stripe.com/bJeeVd0GraaA2ip8Hw1Nu03" target="_blank">
+                Plano Estudante
+            </a>
+
+            <a href="https://buy.stripe.com/eVq14ngFp5UkcX31f41Nu02" target="_blank">
+                Membro Associado
+            </a>
+        </div>
+
+        <div class="pix-donation">
+            <p>// Doação por PIX (CNPJ):</p>
+            <div class="pix-key-box">
+                <span id="pix-key">48.801.114/0001-67</span>
+                <button onclick="copyPix()" class="copy-btn"><i class="far fa-copy"></i> Copiar</button>
+            </div>
+            <p class="pix-detail">Toda ajuda é revertida em infraestrutura para o hackerspace.</p>
+        </div>
+    </div>
+
+    <script>
+        function copyPix() {
+            const pixKey = document.getElementById('pix-key').innerText;
+            navigator.clipboard.writeText(pixKey).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = '#fff';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="far fa-copy"></i> Copiar';
+                    btn.style.background = '#00ff99';
+                }, 2000);
+            });
+        }
+    </script>
+
+    <footer>
+        <p>&copy; Madeira Hacker Club — Hack the Planet, baby.</p>
+    </footer>
+
+
+</body>
+
+</html>

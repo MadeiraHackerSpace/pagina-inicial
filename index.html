@@ -1,128 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madeira Hacker Club</title>
 
-    <style>
-        body {
-            background: #000;
-            color: #00ff99;
-            font-family: "Courier New", monospace;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            padding: 40px 10px;
-        }
-
-        .logo {
-            max-width: 240px;
-            filter: drop-shadow(0 0 6px #00ff99);
-        }
-
-        h1 {
-            font-size: 38px;
-            margin-top: 20px;
-            text-shadow: 0 0 8px #00ff99;
-        }
-
-        .terminal-box, .info-box {
-            background: #111;
-            border: 2px solid #00ff99;
-            width: 80%;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 25px;
-            text-align: left;
-            box-shadow: 0 0 15px #00ff99;
-        }
-
-        .btns {
-            margin-top: 20px;
-        }
-
-        .btns a {
-            text-decoration: none;
-            color: #000;
-            background: #00ff99;
-            padding: 12px 22px;
-            margin: 6px;
-            border-radius: 6px;
-            font-weight: bold;
-            display: inline-block;
-            transition: 0.2s;
-        }
-
-        .btns a:hover {
-            box-shadow: 0 0 12px #00ff99;
-        }
-
-        footer {
-            margin-top: 50px;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-
-        /* ANIMAÇÃO TYPEWRITER */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-
-        @keyframes blinkCursor {
-            0% { border-right-color: #00ff99; }
-            50% { border-right-color: transparent; }
-            100% { border-right-color: #00ff99; }
-        }
-
-        .typewriter {
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 3px solid #00ff99;
-            width: 0;
-            animation: typing 2s steps(30, end) forwards, blinkCursor 0.7s infinite;
-            display: block;
-            margin-bottom: 12px;
-        }
-
-        .delay1 { animation-delay: 0.5s; }
-        .delay2 { animation-delay: 2.5s; }
-        .delay3 { animation-delay: 4.5s; }
-        .delay4 { animation-delay: 6.5s; }
-
-        .support-box {
-            background: #111;
-            border: 2px solid #00ff99;
-            width: 80%;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 25px;
-            text-align: center;
-            box-shadow: 0 0 15px #00ff99;
-        }
-
-    </style>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="paginas/about.html">Sobre</a>
+                <a href="paginas/projetos.html">Projetos</a>
+                <a href="paginas/donation.html">Apoio</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/MadeiraHackerSpace" target="_blank" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://chat.whatsapp.com/4y7xoORc5NWHxGc3082SBB" target="_blank" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </nav>
         <img src="assets/mhc_fundo_branco.png" class="logo" alt="Madeira Hacker Club">
         <h1>Madeira Hacker Club</h1>
         <p>// Bem-vindo ao nosso laboratório de bits, bytes, café e gambiarra criativa!</p>
     </header>
 
-    <div class="info-box">
-        <h2>O que é o Madeira Hacker Club?</h2>
-        <p>
-            O Madeira Hacker Club é um hackerspace em Porto Velho/RO onde a galera se junta para
-            colocar ideias em prática. É um espaço aberto e comunitário para desenvolver
-            projetos, aprender coisas novas.
-        </p>
-    </div>
 
     <!-- TERMINAL COM ANIMAÇÃO -->
     <div class="terminal-box">
@@ -131,12 +40,25 @@
 
         <p class="typewriter delay3">$ objetivo</p>
         <p class="typewriter delay4">> criar, aprender, compartilhar conhecimento e experiências.</p>
+
+        <br>
+
+        <p class="typewriter delay5">$ cat sobre_nos</p>
+        <p class="typewriter-wrap delay6">> O Madeira Hacker Club é um hackerspace em Porto Velho/RO onde a galera se
+            junta para colocar ideias em prática. É um espaço aberto e comunitário para desenvolver projetos e aprender
+            coisas novas.</p>
+
+        <br>
+
+        <p class="typewriter delay7">$ check --eventos</p>
+        <p class="typewriter-wrap delay8">> Não é necessário se associar para participar ou conduzir um evento! Com
+            poucas exceções, todos nossos eventos são gratuitos.</p>
     </div>
 
-    <!-- APOIO / STRIPE -->
+    <!-- APOIO / STRIPE / PIX -->
     <div class="support-box">
-        <h2>Quero apoiar o Madeira Hacker Club</h2>
-        <p>Ajude a manter o espaço vivo e funcionando. Escolha um plano:</p>
+        <h2>Apoie o Madeira Hacker Club</h2>
+        <p>Ajude a manter o espaço vivo e funcionando. Escolha um plano ou faça uma doação avulsa:</p>
 
         <div class="btns">
             <a href="https://buy.stripe.com/bJeeVd0GraaA2ip8Hw1Nu03" target="_blank">
@@ -147,12 +69,32 @@
                 Membro Associado
             </a>
         </div>
+
+        <div class="pix-donation">
+            <p>// Doação por PIX (CNPJ):</p>
+            <div class="pix-key-box">
+                <span id="pix-key">48.801.114/0001-67</span>
+                <button onclick="copyPix()" class="copy-btn"><i class="far fa-copy"></i> Copiar</button>
+            </div>
+            <p class="pix-detail">Qualquer valor ajuda a pagar o café e a internet!</p>
+        </div>
     </div>
 
-    <div class="btns">
-        <a href="https://github.com/MadeiraHackerSpace" target="_blank">GitHub</a>
-        <a href="https://chat.whatsapp.com/4y7xoORc5NWHxGc3082SBB" target="_blank">WhatsApp</a>
-    </div>
+    <script>
+        function copyPix() {
+            const pixKey = document.getElementById('pix-key').innerText;
+            navigator.clipboard.writeText(pixKey).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                btn.style.background = '#fff';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="far fa-copy"></i> Copiar';
+                    btn.style.background = '#00ff99';
+                }, 2000);
+            });
+        }
+    </script>
+
 
     <footer>
         <p>
@@ -164,4 +106,5 @@
     </footer>
 
 </body>
+
 </html>
